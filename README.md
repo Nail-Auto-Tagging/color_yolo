@@ -1,9 +1,17 @@
 # yolov5-object-detector
-Input: cv2.imread("image1.jpg")
-Output: list = [label, conf, box[x1, y1, x2, y2]]
+```python
+# input
+cv2.imread("image1.jpg")
+# output
+[label, conf, box[x1, y1, x2, y2]]
+```
 
-Simple detect script for yolov5.onnx.(You can change weight.pt into weight.onnx by running export.py from yolov5.)
+Simple detect script for yolov5.onnx.
+
+(You can change weight.pt into weight.onnx by running export.py from yolov5.)
+
 Reference from EscaticZheng/yolov5-onnx-inference and from detect.py in ultralytics/yolov5.
+
 Inference per image.
 
 Default is set to cpu.
