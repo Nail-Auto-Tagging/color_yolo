@@ -19,7 +19,9 @@ To change into gpu, ctrl+f and check 'to run with gpu' line
 
 
 ## Requirements
+
 **Check https://github.com/EscaticZheng/yolov5-onnx-inference**
+
 numpy==1.22.3   
 opencv-python==4.5.5  
 torch==1.9.0+cu102  
@@ -28,11 +30,12 @@ onnxruntime-gpu==1.12.1
 **If you use cpu version, you can pip install torch, torchvision, and onnxruntime**
 
 
-## detect.py
+## 1. detect.py
 ```python
 # detect.py
 
-run(input) # input = cv2.imread("image1.jpg")
+# input = cv2.imread("image1.jpg")
+run(input)
 # ...
 def run(input)
     # ...
@@ -42,8 +45,8 @@ def run(input)
 ```
 
 
-## test_detect.py
-You can check how it runs by
+## 2. test_detect.py
+You can check how it runs by test_detect.py
 ```python
 python test_detect.py
 ```
@@ -62,6 +65,7 @@ cv2.imwrite('test_cpu.jpg', input)
 print(output)
 ```
 
+For example,
 ```python
 print(det)
 ```
