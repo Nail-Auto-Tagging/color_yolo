@@ -1,7 +1,4 @@
 # yolov5-object-detector
-
-YOLOv5 object detction for weights.onnx
-
 Input: cv2.imread("image1.jpg")
 Output: list = [label, conf, box[x1, y1, x2, y2]]
 
