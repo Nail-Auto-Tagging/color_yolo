@@ -3,7 +3,7 @@
 # input
 cv2.imread("image1.jpg")
 # output
-[label, conf, box[x1, y1, x2, y2]]
+[label, conf, [x1, y1, x2, y2]]
 ```
 
 Simple detect script for yolov5.onnx.
@@ -69,7 +69,7 @@ For example,
 ```python
 print(det)
 ```
-will result on
+will result in
 ```python
 #        x1        y1        x2        y2          conf      label
 tensor([[120.0000, 271.0000, 179.0000, 356.0000,   0.9326,   8.0000],
@@ -87,7 +87,7 @@ and
 ```python
 print(output)
 ```
-will result on
+will result in
 ```python
 # label conf box[x1, y1, x2, y2]
 [[8, 0.9326, [120, 271, 179, 356]], [8, 0.9247, [271, 114, 309, 172]], [8, 0.924, [152, 433, 227, 518]], [8, 0.9106, [305, 353, 367, 432]], [8, 0.885, [35, 248, 96, 326]], [8, 0.8793, [325, 144, 375, 191]], [11, 0.8015, [49, 386, 108, 452]], [11, 0.7752, [200, 217, 254, 309]], [7, 0.731, [200, 219, 255, 309]], [11, 0.7031, [248, 419, 321, 509]]]
@@ -98,7 +98,7 @@ and
 cv2.imwrite('test_cpu.jpg', input)
 # [ 'multi', 'red', 'orange', 'yellow', 'nude', 'pink', 'green', 'skyblue', 'navy', 'purple', 'black', 'white', 'silver']
 ```
-will result on
+will result in
 
 ![test_cpu](https://user-images.githubusercontent.com/101079604/200031805-5a0d65a1-e16f-4696-8953-cdacad6d23c3.jpg)
 
